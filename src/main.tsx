@@ -10,7 +10,10 @@ import "./index.css";
 const router = createBrowserRouter([
   { path: "/", element: <GateSelectPage /> },
   { path: "/scan", element: <ScanPage /> },
-]);
+],
+  {
+    basename: "/scan",
+  });
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
